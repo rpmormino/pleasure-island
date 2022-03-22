@@ -1,0 +1,432 @@
+/*Style Reset
+**********************************/
+body, header, nav, main, section, footer, div, dt, dl, dd, h1, h2, h3, h4, p, ul, li, a, img, picture {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*Mobile-first Styles
+**********************************/
+section.welcome {
+    display: none;
+}
+
+div.sidebar {
+    display: none;
+}
+
+section.upcoming-events {
+    display: none;
+}
+
+section.beach-images {
+    display: none;
+}
+
+
+header {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 20% auto;
+    background: #5AB9C9;
+    padding: .5em 0 .5em 0;
+}
+
+header img {
+    justify-self: start;
+    max-width: 90px;
+    padding-left: .4em;
+}
+
+header h1 {
+    text-align: right;
+    align-self: center;
+    font-family: "hwt-arabesque",serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #fff;
+    font-size: 3rem;
+    padding-right: .2em;
+}
+
+/* Nav Styles
+**********************************/
+nav {
+    width: 100%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 1em 0;
+    box-shadow: 0 9px 0 rgba(0, 0, 0, 0.082);
+    background: #fff;
+}
+
+nav ul {
+    text-align: center;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #5AB9C9;
+    font-family:  "bovine-mvb",sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.6rem;
+    padding: .2em;
+    text-decoration: none;
+}
+
+nav ul li a:active {
+    color: #225f69;
+}
+
+
+/* Main Styles
+**********************************/
+main {
+    width: 100%;
+    background-image: url(../images/waves-bg.svg);
+    background-attachment: fixed;
+    background-repeat: repeat-x;
+    background-size: cover;
+}
+
+main section p {
+    font-family:  "segoe-ui",sans-serif;
+}
+
+section.hero {
+    margin-bottom: 2em;
+}
+
+section.hero picture img{
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+h2 {
+    clear: both;
+    text-align: center;
+    font-family:  "bovine-mvb",sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #5AB9C9;
+    background: #fff;
+    box-shadow: 0 9px 0 rgba(0, 0, 0, 0.082);
+    padding: .5em;
+    margin-top: -.2em;
+}
+
+h3, h4 {
+    font-family:"bovine-mvb",sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+section.intro-text, section.events, section.dining, section.accomodation, section.activities {
+    width: 100%;
+    margin: 1em auto 1em auto;   
+    background: white;
+    box-shadow: 0 9px 0 rgba(0, 0, 0, 0.082);
+}
+
+section.intro-text h3, section.events h3, section.dining h3, section.accomodation h3, section.activities h3 {
+    text-align: center;
+    color: #FFB259;
+    font-family:  "bovine-mvb",sans-serif;
+    font-size: 1.6rem;
+    margin: 1em 1.3em .5em 1.3em;
+    padding-top: 1em;
+}
+
+section.intro-text h4 {
+    text-align: center;
+    font-family:  "bovine-mvb",sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    padding-bottom: .4em;
+    margin: .5em 1em;
+}
+
+section.intro-text img {
+    max-width: 90%;
+    border-radius: 20px;
+    margin: 0 1em;
+}
+
+section.intro-text p, section.events p, section.dining p, section.accomodation p, section.activities p {
+    padding-bottom: 1em;
+    margin: 0 1em;
+}
+
+section.events img {
+    max-width: 100%;
+    padding-bottom: 1em;
+}
+
+section.upcoming-events-list {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #FFB259;
+}
+
+section.upcoming-events-list h2 {
+    background: #FFDB66;
+    color: #000;
+    padding: 1em;
+}
+
+section.upcoming-events-list dl {
+    padding: 1em;
+}
+
+section.upcoming-events-list dt {
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding-top: .8em;
+}
+
+section.upcoming-events-list dd {
+    background: #FFB259;
+    padding-bottom: .5em;
+}
+
+/*Directory Styles
+************************************/
+section.member-directory {
+    background: #FFB259;
+    padding: 2em 2em 4em 2em;
+}
+
+section.member-directory label {
+    display: block;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+section.member-directory label:first-of-type {
+    display: block;
+    font-family:"bovine-mvb",sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+
+section.member-directory input {
+    display: inline;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+section.member-directory input:first-of-type {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    border: none;
+    padding: 1em;
+    width: 90%;
+}
+
+section.member-directory button {
+    width: 30%;
+    float: left;
+    margin-top: .5em;
+    margin-right: .5em;
+    border-radius: 20px;
+    border: none;
+    background: #FFDB66;
+    padding: .5em;
+    color: #000;
+    font-family: "bovine-mvb",sans-serif;
+    font-size: 1rem;
+}
+
+/*Newsletter Signup Styles
+**********************************/
+section.newsletter{
+    padding-bottom: 3em;
+    width: 100%;
+}
+
+div.newsletter {
+    margin-top: 1em;
+    background: #FFDB66;
+    padding: 1.2em;
+    box-shadow: 0 9px 0 rgba(0, 0, 0, 0.082);
+}
+
+div.newsletter label {
+    display: block;
+    font-family:"bovine-mvb",sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+    padding-bottom: .4em;
+}
+
+div.newsletter input {
+    font-style: italic;
+    padding: 1em;
+    width: 90%;
+    border: none;
+}
+
+div.newsletter button {
+    width: 30%;
+    float: left;
+    margin-top: .5em;
+    margin-right: .5em;
+    border-radius: 20px;
+    border: none;
+    background: #81D6BD;
+    padding: .5em;
+    color: #fff;
+    font-family: "bovine-mvb",sans-serif;
+    font-size: 1.1rem;
+}
+
+div.newsletter p {
+    margin-top: .5em;
+    margin-right: 1em;
+    text-align: right;
+    font-weight: bold;
+    font-size: .7rem;
+    padding: 2em;
+}
+
+img.wave {
+    width: 100%;
+    z-index: 0;
+    margin-bottom: -1em;
+}
+
+/*Footer Styles
+**********************************/
+footer {
+    width: 100%;
+    background: #2A7683;
+    font-family: "segoe-ui",sans-serif;
+    font-size: .9rem;
+    color: #fff;
+    margin-top: .3em;
+    padding-bottom: .3em;
+}
+
+footer h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 0;
+    margin: 0;
+}
+
+section.social-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    margin: 1em 0 3em 0;
+}
+
+footer img {
+    max-width: 50px;
+}
+
+footer div a {
+    color: #fff;
+    text-decoration: none;
+    font-family:  "bovine-mvb",sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.1rem;
+}
+
+footer section div a:active img, footer section div a:active {
+    background: #225f69;
+}
+
+footer p {
+    text-align: center;
+}
+
+section.contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+
+div.contact-us {
+    grid-column: 1 / span 2;
+}
+
+footer section.contact div p.phone, footer section.contact div p.email {
+    font-family: "bovine-mvb",sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2rem;
+    margin-top: 1em;
+}
+
+footer section.contact a {
+    color: #fff;
+    font-size: .7rem;
+    padding: 1.2em .5em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: underline;
+}
+
+footer section.contact a:active {
+    background: #225f69;
+}
+
+footer div.search {
+    color: #000;
+    background: #FFDB66;
+    padding: 1.5em;
+    padding-bottom: 5em;
+    margin-top: 2em;
+    box-shadow: 0 9px 0 rgba(0, 0, 0, 0.082);
+}
+
+footer div.search label {
+    font-family: "bovine-mvb",sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2rem;
+    display: block;
+    padding-bottom: .5em;
+}
+
+footer div.search input {
+    font-style: italic;
+    padding: 1em;
+    width: 90%;
+}
+
+footer div.search button {
+    width: 40%;
+    margin-top: .5em;
+    margin-right: .5em;
+    float: right;
+    border-radius: 20px;
+    border: none;
+    background: #81D6BD;
+    padding: .5em;
+    color: #fff;
+    font-family: "bovine-mvb",sans-serif;
+    font-size: 1.5rem;
+}
+
+footer section.copyright {
+    clear: both;
+    padding-top: 3em;
+    font-size: .8rem;
+}
+
+footer section.copyright p:last-of-type {
+    padding-top: 2em;
+    font-size: .7rem;
+}

@@ -35,7 +35,7 @@ section.intro-text img {
 main.container {
     display: grid;
     grid-column: 1fr 1fr;
-    grid-row: repeat(7 1fr);
+    grid-row: repeat(7, 1fr);
 }
 
 
@@ -178,7 +178,7 @@ header h1 {
     main {
         display: grid;
         grid-column: 1fr 1fr 1fr;
-        grid-row: repeat(6 1fr);
+        grid-row: repeat(6, 1fr);
         column-gap: 1em;
         row-gap: 1em;
         width: 80%;
@@ -188,7 +188,7 @@ header h1 {
     main.eat.container, main.play.container, main.stay.container, main.events.container {
         display: grid;
         grid-template-columns: 70% 30%;
-        grid-template-rows: repeat(5 1fr);
+        grid-template-rows: repeat(5, 1fr);
         column-gap: 1em;
         row-gap: 1em;
         width: 100%;
@@ -200,7 +200,7 @@ header h1 {
         grid-row: 1 / span 1;
     }
 
-    main.home.container section.hero h2 {
+    main.home.container section.hero h2,  main.eat.container section.hero h2, main.play.container section.hero h2, main.stay.container section.hero h2, main.events.container section.hero h2 {
         box-shadow: none;
     }
 
@@ -469,7 +469,7 @@ header h1 {
     img.wave {
         grid-column: 1 / span 3;
         grid-row: 6 / span 1;
-        margin-right: 0 auto;
+        margin-right: auto;
         width: 97.654%;
     }
 
